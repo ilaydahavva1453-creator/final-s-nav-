@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <title>El Yapımı Çini Atölyesi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar kısmı -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">  <!-- expand-lg; büyük ekranda açılır, fixed-top; yukarı yapışır-->
+    <div class="container">
+      <a class="navbar-brand" href="#">🪬Çinili Biçili Atölyem🧿</a> <!--marka yazısı-->
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> <!--toggler; hamburger menü telefonlar için-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto"> <!--ms-auto; sağa gider-->
+          <li class="nav-item"><a class="nav-link" href="#anasayfa">Anasayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#urunler">Ürünler</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hakkimizda">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+          <!-- sepete ekle ikonu bölümü -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              🛒 Sepet (0)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero el sanatı kısmı -->
+
+  <div id="anasayfa" class="container-fluid p-0" style="margin-top:56px;"> <!--container-fluid; tam ekran-->
+
+    <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <!-- GÖSTERGELER -->
+      <!-- <div class="carousel-indicators">
+        <button data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+        <button data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+        <button data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+      </div> -->
+
+      <!--  büyük görsel (çinili) -->
+      <div class="carousel-inner"> <!--carousel; kaydırma-->
+
+        <div class="carousel-item active">
+          <img src="js/çinimüzeimg2.jpg" class="d-block w-100" alt="">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="fw-bold">El Yapımı Çini Kupalar</h1>
+            <p>Her biri elde boyanmış, özel tasarım</p>
+            <a href="#urunler" class="btn btn-light">Ürünleri İncele</a>
+          </div>
+        </div>
+
+        <!-- SAĞ SOL OKLAR
+    <button class="carousel-control-prev" data-bs-target="#heroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button> -->
+
+
+      </div>
+    </div>
+
+
+    <!-- ürünler kısmı (kupa,küllük vazo) -->
+    <div id="urunler" class="container my-5">
+      <div class="text-dark mb-4 text-center">
+        <h2>Ürünlerimiz</h2>
+        <p>✨EL EMEĞİ, GÖZ NURU ÇİNİ TASARIMLAR✨</p>
+      </div>
+
+      <div class="row g-4 "> <!-- g-4; ürünler arası boşluk-->
+        <!-- ürün bir -->
+        <div class="col-md-4"> <!-- büyük ekrnda yan yana küçük ekranda alt alta-->
+          <div class="border p-3 h-100 text-center">
+            <img src="js/çinikupa2.webp" class="img-fluid mb-3">
+            <h5>Çini Kupalar</h5>
+            <p>Günlük kullanıma uygun, el boyaması kupalar.</p>
+
+            <!-- sepete ekle kısmı -->
+            <div class="d-flex justify-content-between align-items-center mt-3"> <!--biri sola birisi sağa-->
+              <span class="badge bg-warning text-dark">Stokta</span>
+              <button class="btn btn-outline-primary btn-sm">Sepete Ekle </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ürün 2 -->
+        <div class="col-md-4">
+          <div class="border p-3 h-100 text-center">
+            <img src="js/çini küllük.webp" class="img-fluid mb-3">
+            <h5>Çini Küllük</h5>
+            <p>Şık ve dekoratif el yapımı küllükler.</p>
+
+            <!-- sepete ekle kısmı -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge bg-warning text-dark">Stokta</span>
+              <button class="btn btn-outline-primary btn-sm">
+                Sepete Ekle
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--  ürün 3 -->
+        <div class="col-md-4">
+          <div class="border p-3 h-100 text-center">
+            <img src="js/dekoratifçini2.png" class="img-fluid mb-3">
+            <h5>Dekoratif Çini</h5>
+            <p>Ev ve ofisler için özel tasarım süsler.</p>
+
+            <!-- sepete ekle kısmı -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge bg-warning text-dark">Stokta</span>
+              <button class="btn btn-outline-primary btn-sm">Sepete Ekle </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- hakkımızda (hikaye) kısmı -->
+    <div id="hakkimizda" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center"> <!--resim ve yazı yan yana ve ortalı-->
+
+          <div class="col-md-6 mb-3">
+            <img src="js/vazoslayt.jpg" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <h2>Hakkımızda</h2>
+            <p>
+              Kendi atölyemizde, geleneksel çini sanatını kullanarak ve hayal güçümüzü birleştirerek el yapımı
+              ürünler üretiyoruz.
+            </p>
+            <p>
+              Her ürünümüz tek tek elde boyanır ve benzersizdir.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- neden biz kısmı -->
+    <div class="container my-5 text-dark">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h4>El Yapımı</h4>
+          <p>Tüm ürünlerimiz el emeğiyle üretilir.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Özel Tasarım</h4>
+          <p>Her ürün benzersizdir.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Yerel Üretim</h4>
+          <p>Kendi atölyemizde üretim.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!--  iletişim kısmı -->
+    <div id="iletisim" class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <h2>İletişime Geç</h2>
+        <p>Sipariş ve bilgi için bize ulaşın</p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+ 
+            <input class="form-control mb-3" placeholder="Adınız"><!--form-control; yazı yazma kutuları-->
+            <input class="form-control mb-3" placeholder="Telefon / E-posta">
+            <textarea class="form-control mb-3" rows="3" placeholder="Mesajınız"></textarea>
+
+            <button class="btn btn-light">Gönder</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    footer kısmı
+ <footer class="bg-primary text-white text-center py-3">
+  © 2025 Çini Atölyem | El Yapımı Sanat
+</footer> 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- menünün açılması,slider'ın kayması-->
+</body>
+
+</html>
